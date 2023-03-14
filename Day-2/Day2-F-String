@@ -1,0 +1,8 @@
+score = 0
+height = 1.8
+isWinnig = True
+print("your score is " + str(score))
+
+print(f"Using f-String your score is {score}, your height is {height}, you are winnig is {isWinnig}")
+
+# Using f-String you can eliminate the need to do type conversion
