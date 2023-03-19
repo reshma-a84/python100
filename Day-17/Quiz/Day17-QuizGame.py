@@ -3,18 +3,16 @@ from data import question_data
 from QuizBrain import QuizBrain
 
 question_bank = []
-for question in question_data:
+for question in question_data:  # Directly looping from data.py where question_data is a Dictionary in a list
     question_text = question["text"]
     question_answer = question["answer"]
-    new_question = Question(question_text,question_answer)
+    new_question = Question(question_text, question_answer)
     question_bank.append(new_question)
 
-quiz = QuizBrain(question_bank)
+quiz = QuizBrain(question_bank) # The question bank is prepared and passed to the QuizBrain class
 
-while quiz.still_has_questions():#if quiz still has questions remaining
+while quiz.still_has_questions():  # if quiz still has questions remaining
     quiz.next_question()
 
 print("You've completed the quiz")
 print(f"Your final score is: {quiz.score}/{quiz.question_number}")
-
-

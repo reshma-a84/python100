@@ -1,9 +1,8 @@
 class User:
     def __init__(self, userid):
-        self.id = userid
+        self.id = userid    # Constructor used to initialize the attribute
 
-    def print_userid(self, userid):
-        self.id = userid
+    def print_userid(self):
         print(f"Userid{self.id} ")
 
 
@@ -13,5 +12,5 @@ i = 0
 while i < itr:
 
     usr.id = i + 1
-    usr.print_userid(usr.id)
+    usr.print_userid()
     i += 1

@@ -1,6 +1,4 @@
 
-
-
 class QuizBrain:
 
     def __init__(self, q_list):
@@ -15,7 +13,8 @@ class QuizBrain:
         #     return False
         # the above lines can be written as below
         return self.question_number < len(self.question_list)
-        # self.question_number < len(self.question_list) - by default returns True/False. So use that return value directly and reduce the number of lines of code
+        # self.question_number < len(self.question_list) - by default returns True/False. So use that return value
+        # directly and reduce the number of lines of code
 
     def next_question(self):
         current_question = self.question_list[self.question_number]
@@ -32,4 +31,3 @@ class QuizBrain:
         print(f"The correct answer was: {correct_answer}.")
         print(f"Your current score is :{self.score}/{self.question_number}")
         print("\n")
-
