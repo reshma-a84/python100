@@ -1,5 +1,5 @@
 class User:
-    def __init__(self, user_id, username):
+    def __init__(self, user_id, username):     # the init function is called everytime when a new object is created from this class
         self.id = user_id
         self.username = username
         self.followers = 0
@@ -9,6 +9,9 @@ class User:
         user.followers += 1
         self.following += 1
 
+    def __repr__(self):
+        pass
+
 
 # user_1 = User()
 # user_1.id = "001"
@@ -16,6 +19,7 @@ class User:
 
 user_1 = User("001", "angela")
 user_2 = User("002", "Jules")
+print(user_1)
 # print(user_1.id)
 # print(user_1.username)
 # print(user_1.follower)
