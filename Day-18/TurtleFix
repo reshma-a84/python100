@@ -1,0 +1,5 @@
+Today I fixed the Turtle graphics window error. Till now I was unable to get the pop-up working for
+Turtle graphics and I thought that it was Mac issue.
+Actually it was the interpreter issue.
+
+To fix this, what I did was changed the interpreter to the "Conda Environment" and it worked.
