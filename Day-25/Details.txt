@@ -1,0 +1,5 @@
+1. weather_data.csv.py - is a csv file which contains data in csv format to be used within the program
+2. weather-read-file.py - used to show how to use 'open' and then use method 'readlines()'
+3. main.py - used to show how to use open by importing 'csv' library and printing out the data. Even though the data is read, the number of lines of code will get tedious if the csv file contains huge number of columns. To avoid such situations we use the 'pandas' library
+4. weather-pandas.py - shows various way pandas library and its methods can be used
+6. 2018_Central_Park..... - data downloaded in CSV format from https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw
